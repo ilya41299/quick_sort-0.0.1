@@ -59,7 +59,7 @@ int main() {
         }
     }
     int left = mas[1];
-    int right = mas [size];
+    int right = mas [size-1];
     q_sort (mas, left, right);
     for(unsigned int i=0; i<size; i++){
         cout << mas[i] << " ";
@@ -68,3 +68,4 @@ int main() {
     return 0;
 
 }
+
