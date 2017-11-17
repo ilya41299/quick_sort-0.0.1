@@ -6,11 +6,11 @@ void q_sort (int *mas, int left, int right ) {
     int c_left = left;
     int c_right = right;
     int p = c_left;
-    while (c_left < c_right) {
+    while (c_left <= c_right) {
         while (mas[c_right] > mas [p] && c_right >= left ){
           right--;
         }
-        while ( (mas[left] < mas [p]) && (c_left <= right) ){
+        while ( (mas[c_left] < mas [p]) && (c_left <= right) ){
             left++;
         }
         if (c_left <=c_right){
